@@ -7,7 +7,7 @@ from glovo_app.db.database import SessionLocal
 from glovo_app.db.schema import StoreSchema
 
 
-stores_router = APIRouter(prefix='/auth', tags=['Auth'])
+stores_router = APIRouter(prefix='/store', tags=['Stores'])
 
 
 def get_db():

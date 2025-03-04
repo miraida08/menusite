@@ -7,7 +7,7 @@ from glovo_app.db.database import SessionLocal
 from glovo_app.db.schema import StoreReviewSchema
 
 
-store_review_router = APIRouter(prefix='/auth', tags=['Auth'])
+store_review_router = APIRouter(prefix='/store_review', tags=['Store_reviews'])
 
 
 def get_db():

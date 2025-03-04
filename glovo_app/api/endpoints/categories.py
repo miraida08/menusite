@@ -7,7 +7,7 @@ from glovo_app.db.database import SessionLocal
 from glovo_app.db.schema import CategorySchema
 
 
-category_router = APIRouter(prefix='/auth', tags=['Auth'])
+category_router = APIRouter(prefix='/category', tags=['Category'])
 
 
 def get_db():

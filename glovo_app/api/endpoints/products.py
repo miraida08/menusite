@@ -7,7 +7,7 @@ from glovo_app.db.database import SessionLocal
 from glovo_app.db.schema import ProductSchema
 
 
-product_router = APIRouter(prefix='/auth', tags=['Auth'])
+product_router = APIRouter(prefix='/product', tags=['Products'])
 
 
 def get_db():

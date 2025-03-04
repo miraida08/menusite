@@ -7,7 +7,7 @@ from glovo_app.db.database import SessionLocal
 from glovo_app.db.schema import ProductComboSchema
 
 
-product_combo_router = APIRouter(prefix='/auth', tags=['Auth'])
+product_combo_router = APIRouter(prefix='/product_combo', tags=['Product_combos'])
 
 
 def get_db():

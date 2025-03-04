@@ -54,14 +54,14 @@ class OrderSchema(BaseModel):
     id: int
     delivery_address: str
     created_date: datetime
-    role: OrderRole
+    role: OrderStatus
     client_id: int
     courier_id: int
 
 
 class CourierSchema(BaseModel):
     user_id: int
-    role: CourierRole
+    role: CourierStatus
     order_id: int
 
 
@@ -70,7 +70,7 @@ class StoreReviewSchema(BaseModel):
     client_id: int
     created_date: datetime
     comment: str
-    rating: ReviewChoices
+    rating: RatingStatus
 
 
 class CourierReviewSchema(BaseModel):
@@ -78,7 +78,7 @@ class CourierReviewSchema(BaseModel):
     client_id: int
     created_date: datetime
     comment: str
-    rating: ReviewChoices
+    rating: RatingStatus
 
 
 

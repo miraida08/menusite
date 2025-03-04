@@ -7,7 +7,7 @@ from glovo_app.db.database import SessionLocal
 from glovo_app.db.schema import CourierSchema
 
 
-courier_router = APIRouter(prefix='/auth', tags=['Auth'])
+courier_router = APIRouter(prefix='/courier', tags=['Couriers'])
 
 
 def get_db():

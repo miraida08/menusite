@@ -10,11 +10,22 @@ from passlib.context import CryptContext
 from jose import jwt
 from datetime import datetime, timedelta
 from fastapi_limiter.depends import RateLimiter
+from passlib.hash import bcrypt
 
 auth_router = APIRouter(prefix='/auth', tags=['Auth'])
 
 password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
+
+
+def set_password(self, password: str):
+    self.hashed_password = bcrypt.hash(password)
+
+    # login
+
+
+def check_password(self, password: str):
+    return bcrypt.verify(password, self.hashed_password)
 
 
 def create_access_token(data: dict, expires_delta: timedelta | None = None):
