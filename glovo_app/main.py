@@ -41,6 +41,7 @@ glovo_app.include_router(social_auth.social_router, tags=['social'])
 if __name__ == '__main__':
     uvicorn.run(glovo_app, host='127.0.0.1', port=8080)
 
+# hvkjdbskl/vbljdsklacv.ajlfvkjs cjj csjcbkasjbjkdsbvjkdsbv xkjvbsdjkbvnzxbk;vjbsk ;kjxbcndbds;vjkbnd vzxbn zxm.v\
 
 
 
